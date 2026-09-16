@@ -30,7 +30,8 @@
   },
   "files": [
     "dist",
-    "assets"
+    "assets",
+    "src"
   ],
   "scripts": {
     "build": "tsc",
