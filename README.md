@@ -1,3 +1,5 @@
+[![CI](https://github.com/Siriuns-X/satteri-mathml/actions/workflows/ci.yml/badge.svg)](https://github.com/Siriuns-X/satteri-mathml/actions/workflows/ci.yml)
+
 # satteri-mathml
 
 A [Sätteri](https://github.com/bruits/satteri) plugin that renders LaTeX math to native MathML using [math-core](https://github.com/tmke8/math-core).
