@@ -48,7 +48,7 @@
     "vitest": "^5.0.1"
   },
   "peerDependencies": {
-    "satteri": ">=0.10.0"
+    "satteri": "^0.10.0"
   },
   "devEngines": {
     "packageManager": {
