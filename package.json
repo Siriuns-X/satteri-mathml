@@ -34,7 +34,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "math-core": "^0.8.2"
@@ -42,7 +44,8 @@
   "devDependencies": {
     "@types/node": "^24.13.4",
     "satteri": "^0.10.5",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
   },
   "peerDependencies": {
     "satteri": ">=0.10.0"
