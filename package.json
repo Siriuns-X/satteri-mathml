@@ -37,7 +37,8 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepack": "pnpm build"
   },
   "dependencies": {
     "math-core": "^0.8.2"
