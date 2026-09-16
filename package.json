@@ -1,6 +1,6 @@
 {
   "name": "satteri-mathml",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Sätteri plugin that renders LaTeX math to native MathML via math-core",
   "keywords": [
     "satteri",
