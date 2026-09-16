@@ -1,0 +1,57 @@
+{
+  "name": "satteri-mathml",
+  "version": "0.0.0",
+  "description": "Sätteri plugin that renders LaTeX math to native MathML via math-core",
+  "keywords": [
+    "satteri",
+    "satteri-plugin",
+    "mathml",
+    "latex",
+    "math",
+    "astro"
+  ],
+  "homepage": "https://github.com/Siriuns-X/satteri-mathml#readme",
+  "bugs": "https://github.com/Siriuns-X/satteri-mathml/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siriuns-X/satteri-mathml.git"
+  },
+  "license": "MIT",
+  "author": "Siriuns",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./style.css": "./assets/style.css",
+    "./mathmlfixes.css": "./assets/mathmlfixes.css",
+    "./fonts/*": "./assets/*"
+  },
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "math-core": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "satteri": "^0.10.5",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "satteri": ">=0.10.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.27.0",
+      "onFail": "warn"
+    }
+  }
+}
