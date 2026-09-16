@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/setup@v1
+        with:
+          runtime: node@24
+          cache: true
+
+      - name: Check tag matches package version
+        run: |
+          test "v$(node -p 'require("./package.json").version')" = "${GITHUB_REF_NAME}"
+
+      - run: pnpm build
+      - run: pnpm test
+
+      - run: npm install -g npm@latest
+      - run: npm publish --access public
